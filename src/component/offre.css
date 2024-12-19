@@ -1,0 +1,132 @@
+.background-image {
+    background-image: url('https://cdn.pixabay.com/photo/2020/03/21/20/03/real-estate-4955087_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-message {
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Coneria Script', cursive;
+    color: white;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1; /* Ensure the message stays on top */
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Adds a glass-like effect */
+    margin-top: 20px;
+    z-index: 2; /* Keep the form on top */
+}
+
+.offre-form-container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.half-width {
+    width: 48%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+input, textarea, .p-dropdown {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds depth to input fields */
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, .p-dropdown:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow for depth */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Additional decorations */
+.background-image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Adds a darker overlay for better text visibility */
+    z-index: 0;
+}
+
+.welcome-message h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .half-width {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .welcome-message h1 {
+        font-size: 2em;
+    }
+
+    .overlay {
+        padding: 30px;
+    }
+}

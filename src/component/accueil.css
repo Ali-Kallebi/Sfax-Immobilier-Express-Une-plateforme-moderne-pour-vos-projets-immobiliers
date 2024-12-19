@@ -1,0 +1,173 @@
+/* Général */
+
+
+.background-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    backdrop-filter: brightness(0.75);
+}
+
+.accueil-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajoute une transparence au fond pour améliorer la lisibilité */
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1.agency-name {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-family: 'Coneria Script', cursive;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h2.location {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Great Vibes', cursive;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p.agency-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    color: #f1f1f1;
+}
+
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+    cursor: pointer;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.service-item i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #FFD700;
+    cursor: pointer;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Expérience */
+.experience-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.experience-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    color: #f1f1f1;
+}
+
+
+.call-to-action {
+    margin-top: 40px;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+    transform: translateY(-5px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.profile-picture-container {
+    text-align: center; /* Centre la photo */
+    margin-top: 20px; /* Ajoute un peu d'espace en haut */
+}
+
+.profile-picture {
+    width: 150px; /* Largeur de la photo */
+    height: 150px; /* Hauteur de la photo */
+    border-radius: 50%; /* Rend la photo circulaire */
+    border: 4px solid white; /* Ajoute une bordure blanche autour de la photo */
+    object-fit: cover; /* Assure que l'image remplisse bien le cercle */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre portée pour l'effet de profondeur */
+}
+.cta-button {
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .cta-button:hover {
+    background-color: #22c35e;
+  }
+  
+

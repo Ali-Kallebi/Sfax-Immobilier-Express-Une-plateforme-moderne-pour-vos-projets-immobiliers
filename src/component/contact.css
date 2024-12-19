@@ -1,0 +1,99 @@
+.contact-container {
+    width: 100%;
+    height: 60vh;
+    margin: 400px auto 20px auto; /* Augmente la marge en haut pour déplacer plus bas */
+    padding: 20px;
+    background-color: rgba(44, 44, 44, 0.9); /* Gris charbon avec transparence */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+  }
+  
+  
+  /* Page de contact */
+  .contact-page {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+  }
+  
+  /* Informations de contact */
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  /* Carte de contact */
+  .contact-card {
+    background-color:transparent; /* Légère transparence pour effet stylé */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 48px;;
+    
+    text-align: center;
+    min-width: 160px;
+    max-width: 450px;
+    color: #e0e0e0;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .contact-card p {
+    margin: 0;
+    font-size: 1.6em;
+     color: rgb(210, 118, 6);
+    
+  }
+  
+  /* Liens dans la carte */
+  .contact-card a {
+    color: #00bcd4; /* Couleur bleu cyan pour liens */
+    text-decoration: none;
+    font-weight: 500;
+   
+  }
+  
+  .contact-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Titre principal */
+  h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: rgb(210, 118, 6);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  
+  .contact-message {
+    font-family: 'Roboto', sans-serif; /* Utilise la police Roboto pour le texte général */
+    font-size: 18px; /* Taille de police agréable pour la lisibilité */
+    line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité */
+    color: #ffffff; /* Texte blanc pour contraster avec le fond */
+    text-align: center; /* Aligne le texte au centre */
+    margin: 20px 0; /* Ajoute de l'espace en haut et en bas */
+    padding: 10px; /* Un peu de padding autour du texte */
+   /* Ajoute un fond semi-transparent pour plus de lisibilité */
+    border-radius: 10px; /* Coins arrondis pour un look plus moderne */
+    max-width: 80%; /* Limite la largeur du message */
+    margin-left: auto;
+    margin-right: auto; /* Centrer horizontalement */
+  }
+  
+  .contact-message strong {
+    font-family: 'Playfair Display', serif; /* Utilise une police différente pour le texte en gras */
+    font-weight: bold;
+  }
+  
